@@ -23,6 +23,7 @@ const FeaturesSection = () => {
       <HeadingText
         textForHeading="What I Do For "
         occupations={["Companies", "Individuals", "Small businesses"]}
+        className="text-6xl bg-red-500"
       />
 
       <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 md:grid-flow-col gap-8 mt-16">

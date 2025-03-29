@@ -15,12 +15,12 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen  md:px-8 px-4 md:py-16 py-8 text-amber-100  border-b-1 border-gray-50"
+      className="md:px-16 px-4 md:py-16 py-8 border-b-2 border-gray-100"
     >
-      <div className="flex gap-9  flex-col md:flex-row">
+      <div className="flex gap-9 flex-col md:flex-row">
         <HeroImage />
-        <div className="flex flex-col justify-between">
-          <div>
+        <div className="flex flex-1 flex-col justify-between">
+          <div className="flex flex-col gap-3">
             <HeadingText textForHeading="Hi, I am " nameText="Hyacinth A." />
             <HeadingText
               textForHeading="a "
@@ -28,7 +28,7 @@ const HeroSection = () => {
                 "Frontend Developer",
                 "Tech Blogger",
                 "UI/UX Designer",
-                "Open Source Contributor",
+                "Open Source Cont",
               ]}
             />
             <ParagraphText pText=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quas natus! Quos magnam ad accusantium voluptates eius, quasi nemo tempora ducimus laboriosam quam accusamus temporibus vel molestias dignissimos, aut quae nesciunt, dicta distinctio facere praesentium laborum perferendis atque error. Nobis!" />

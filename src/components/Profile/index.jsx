@@ -1,12 +1,12 @@
-const Profile = () => {
+const Profile = ({ profilePicture, profileName, className }) => {
   return (
-    <div className="flex justify-center items-center gap-2">
+    <div className={`flex justify-center items-center gap-2 ${className}`}>
       <img
-        src={"/assets/profile-picture.jpg"}
+        src={profilePicture}
         alt="Profile picture"
         className="w-17 h-17 rounded-full cursor-pointer hover:border-2 delay-300"
       />
-      <span className="text-2xl font-medium">HYC.DEV</span>
+      <span className="text-2xl font-medium">{profileName}</span>
     </div>
   );
 };
