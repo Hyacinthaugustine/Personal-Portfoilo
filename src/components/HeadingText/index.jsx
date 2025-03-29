@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import React from "react";
 
-const HeadingText = ({ textForHeading, nameText, occupations = [] }) => {
+const HeadingText = ({
+  textForHeading,
+  nameText,
+  occupations = [],
+  className,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayText, setDisplayText] = useState(occupations[0] || "");
   const [deleting, setDeleting] = useState(true);
@@ -35,7 +40,7 @@ const HeadingText = ({ textForHeading, nameText, occupations = [] }) => {
   }, [index, deleting, currentIndex, occupations]);
 
   return (
-    <h1 className="md:text-6xl text-3xl font-bold mb- capitalize">
+    <h1 className={`md:text-5xl text-3xl font-bold capitalize ${className}`}>
       {textForHeading}
       <span className="text-red-400">
         {nameText || displayText}

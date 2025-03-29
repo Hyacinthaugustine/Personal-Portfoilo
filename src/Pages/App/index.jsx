@@ -8,6 +8,7 @@ import ClientsSection from "../Navigation/Clients-section";
 import ContactsSection from "../Navigation/Contacts-section";
 import BlogsSection from "../Navigation/Blogs-section";
 import Testimonial from "../Navigation/TestimonailSection";
+import Footer from "../Navigation/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Testimonial />
         <BlogsSection />
         <ContactsSection />
+        <Footer />
       </div>
     </div>
   );

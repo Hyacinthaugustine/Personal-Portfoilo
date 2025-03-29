@@ -1,10 +1,10 @@
 const HeroImage = () => {
   return (
-    <div>
+    <div className="rounded-2xl p-4 bg-gray-200  flex-1">
       <img
         src="/assets/profile-picture.jpg"
         alt="Hero image"
-        className="md:h-120 md:w-120 w-[90%] h-100  rounded-2xl max-w-4xl border-20 text-Amaranth-pink  "
+        className="rounded-xl"
       />
     </div>
   );
